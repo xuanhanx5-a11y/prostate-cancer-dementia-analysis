@@ -1,0 +1,6 @@
+args <- commandArgs(FALSE)
+f <- sub("^--file=","",grep("^--file=",args,value=TRUE)[1])
+code_dir <- dirname(dirname(normalizePath(f)))
+source(file.path(code_dir,"clinical","engine.R"))
+root <- dirname(code_dir)
+run_clinical("clinical",code_dir,Sys.getenv("CEBP_DATA_DIR",file.path(root,"data")),Sys.getenv("CEBP_RESULTS_DIR",file.path(root,"results")))

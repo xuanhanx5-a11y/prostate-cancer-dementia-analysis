@@ -1,0 +1,1 @@
+install.packages(c("data.table","survival","readxl","openxlsx","nnet","dplyr","broom","gtsummary","car","ggplot2","stringr","scales","ggrepel","poLCA","clue","mice","cmprsk"), repos="https://cloud.r-project.org")

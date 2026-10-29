@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-cd "$(dirname "$0")"
-case "${1:-check}" in
-  general) Rscript general/pipeline.R ;;
-  lca_clinical) Rscript lca/run_lca.R clinical ;;
-  lca_ukb) Rscript lca/run_lca.R ukb ;;
-  *) Rscript main.R "${1:-check}" ;;
-esac

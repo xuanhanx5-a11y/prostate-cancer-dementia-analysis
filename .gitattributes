@@ -1,0 +1,3 @@
+* text=auto
+*.R text eol=lf
+code/run text eol=lf

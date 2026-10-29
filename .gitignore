@@ -1,0 +1,13 @@
+data/*
+!data/README.md
+results/*
+!results/.gitkeep
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.rds
+*.RData
+.env
+.env.*
+*.log
